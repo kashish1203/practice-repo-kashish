@@ -57,9 +57,27 @@
 	</ItemGroup>
 
 	<ItemGroup>
+	  <None Remove="Resources\Images\cameron_heyward.jpg" />
+	  <None Remove="Resources\Images\delete.png" />
+	  <None Remove="Resources\Images\fav.png" />
+	  <None Remove="Resources\Images\george_pickens.jpg" />
+	  <None Remove="Resources\Images\kenny_pickett.webp" />
+	  <None Remove="Resources\Images\minkah_fitzpatrick.jpg" />
+	  <None Remove="Resources\Images\najee_harris.jpg" />
+	  <None Remove="Resources\Images\swipe.png" />
+	  <None Remove="Resources\Images\tj_watt.jpg" />
+	</ItemGroup>
+
+	<ItemGroup>
 		<PackageReference Include="Microsoft.Maui.Controls" Version="$(MauiVersion)" />
 		<PackageReference Include="Microsoft.Maui.Controls.Compatibility" Version="$(MauiVersion)" />
 		<PackageReference Include="Microsoft.Extensions.Logging.Debug" Version="8.0.0" />
+	</ItemGroup>
+
+	<ItemGroup>
+	  <MauiXaml Update="ControlDemo.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
 	</ItemGroup>
 
 </Project>
